@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: #adb5bd;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+      color: #fff;
+    }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .navbar-custom {
+      margin-left: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h4 class="text-center mb-4">My Dashboard</h4>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Messages</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome User</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h2 class="mb-4">Dashboard Overview</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Users</h5>
+            <p class="card-text display-6">120</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Messages</h5>
+            <p class="card-text display-6">75</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Sales</h5>
+            <p class="card-text display-6">$5K</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mt-4">Recent Activity</h4>
+    <table class="table table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Activity</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>John</td><td>Logged In</td><td>2025-07-23</td></tr>
+        <tr><td>2</td><td>Mary</td><td>Updated Profile</td><td>2025-07-22</td></tr>
+        <tr><td>3</td><td>Steve</td><td>New Message</td><td>2025-07-21</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
