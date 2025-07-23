@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Sign-In</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .login-container {
+      max-width: 350px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 25px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .amazon-logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 100px;
+    }
+    .btn-amazon {
+      background-color: #f0c14b;
+      border-color: #a88734;
+      color: #111;
+      font-weight: bold;
+    }
+    .btn-amazon:hover {
+      background-color: #e2b33d;
+    }
+    .small-link {
+      font-size: 0.9rem;
+    }
+    .divider {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 0.85rem;
+      color: #555;
+      position: relative;
+    }
+    .divider::before, .divider::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ddd;
+    }
+    .divider::before { left: 0; }
+    .divider::after { right: 0; }
+  </style>
+</head>
+<body>
+  <div class="login-container shadow-sm">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="amazon-logo">
+    <h4 class="mb-3">Sign-In</h4>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email or mobile phone number</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email or phone">
+      </div>
+      <button type="submit" class="btn btn-amazon w-100">Continue</button>
+      <p class="small mt-2 small-link">By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+      <a href="#" class="small-link d-block mt-3">Need help?</a>
+    </form>
+  </div>
+
+  <div class="login-container text-center mt-3">
+    <div class="divider">New to Amazon?</div>
+    <a href="#" class="btn btn-outline-secondary w-100">Create your Amazon account</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
